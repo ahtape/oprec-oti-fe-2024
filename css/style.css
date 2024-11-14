@@ -15,6 +15,7 @@ ul {
 a,
 button {
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* navbar */
@@ -29,6 +30,7 @@ button {
 
 .navbar a {
   color: #a1a1a1;
+  position: relative;
 }
 
 .nav-kiri {
@@ -55,10 +57,29 @@ button {
   padding: 0 20px;
 }
 
+.navbar li a::after {
+  content: "";
+  position: absolute;
+  background-color: #ededed;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -0.3rem;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ededed;
+}
+
+.navbar a:hover:after {
+  width: 100%;
+}
+
 .nav-kanan {
   margin: 0 50px 0 0;
   display: flex;
-  width: 15%;
+  width: 20%;
   justify-content: space-between;
   align-items: center;
 }
@@ -69,7 +90,7 @@ button {
 
 .nav-kanan button {
   height: 40px;
-  width: 80px;
+  width: 100px;
   border-radius: 8px;
   font-size: 1em;
 }
@@ -80,9 +101,23 @@ button {
   border: solid #27272a;
 }
 
+.nav-kanan #sign-in:hover,
+.container-1 #more-analytics:hover,
+.container-3 #contact:hover {
+  background-color: #27272a;
+  transition: 0.3s;
+}
+
 .nav-kanan #sign-up {
   background-color: #ededed;
   color: #000000;
+}
+
+.nav-kanan #sign-up:hover,
+.container-1 #get-started:hover,
+.container-3 #sign-up:hover {
+  background-color: #a1a1a1;
+  transition: 0.3s;
 }
 
 /* first content */
@@ -97,6 +132,23 @@ button {
 .container-1 a {
   color: #ededed;
   font-size: 1em;
+  width: fit-content;
+  position: relative;
+}
+
+.container-1 a::after {
+  content: "";
+  position: absolute;
+  background-color: #ededed;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -0.3rem;
+  transition: 0.3s;
+}
+
+.container-1 a:hover::after {
+  width: 100%;
 }
 
 .container-1 h1 {
@@ -158,7 +210,7 @@ button {
 .container-3 {
   display: flex;
   flex-direction: column;
-  margin: 50px;
+  margin: 50px 50px 100px 50px;
   border: solid #27272a;
 }
 
@@ -260,6 +312,11 @@ button {
 
 .footer a {
   color: #a1a1a1;
+}
+
+.footer a:hover {
+  color: #ededed;
+  transition: 0.3s;
 }
 
 .footer #status {
