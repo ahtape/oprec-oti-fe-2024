@@ -264,11 +264,17 @@ button {
   border: solid #27272a;
   width: 320px;
   height: 210px;
+  overflow: hidden;
 }
 
 .container-3 #kanan img {
   width: 320px;
   height: 160px;
+}
+
+.container-3 #kanan img:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s;
 }
 
 .container-3 #kanan h3 {
