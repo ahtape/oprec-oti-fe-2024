@@ -1,0 +1,271 @@
+/* Global */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #ededed;
+  font-family: "Inter", sans-serif;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a,
+button {
+  text-decoration: none;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid #27272a;
+  padding: 16px 0;
+  font-weight: 400;
+}
+
+.navbar a {
+  color: #a1a1a1;
+}
+
+.nav-kiri {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: 0 0 0 50px;
+}
+
+.logo a {
+  color: #ededed;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.nav-kiri ul {
+  display: flex;
+  font-size: 16px;
+}
+
+.nav-kiri li {
+  padding: 0 20px;
+}
+
+.nav-kanan {
+  margin: 0 50px 0 0;
+  display: flex;
+  width: 15%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-kanan i {
+  font-size: 1.3em;
+}
+
+.nav-kanan button {
+  height: 40px;
+  width: 80px;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.nav-kanan #sign-in {
+  background-color: #000000;
+  color: #ededed;
+  border: solid #27272a;
+}
+
+.nav-kanan #sign-up {
+  background-color: #ededed;
+  color: #000000;
+}
+
+/* first content */
+.container-1 {
+  color: #ededed;
+  display: flex;
+  flex-direction: column;
+  margin: 80px 50px;
+  font-weight: 400;
+}
+
+.container-1 a {
+  color: #ededed;
+  font-size: 1em;
+}
+
+.container-1 h1 {
+  margin: 10px 0 10px 0;
+  font-size: 4em;
+  width: 50%;
+}
+
+.container-1 button {
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 1em;
+  margin-right: 8px;
+}
+
+.container-1 #get-started {
+  background-color: #ededed;
+  color: #000000;
+}
+
+.container-1 #more-analytics {
+  background-color: #000000;
+  color: #ededed;
+  border: solid #27272a;
+}
+
+/* second content */
+.container-2 {
+  display: flex;
+  border: solid #27272a;
+}
+
+.container-2 .content:first-child {
+  border-right: solid #27272a;
+}
+
+.container-2 .content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 60px 60px;
+}
+
+.container-2 .content * {
+  padding: 8px 0;
+}
+
+.container-2 h2 {
+  font-size: 2em;
+}
+
+.container-2 img {
+  width: 543px;
+  height: 315px;
+}
+
+/* third content */
+.container-3 {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  border: solid #27272a;
+}
+
+.container-3 #atas {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.container-3 #kiri {
+  width: 40%;
+  padding: 50px 50px 50px 50px;
+  border-right: solid #27272a;
+}
+
+.container-3 #kiri h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.container-3 #kiri p {
+  font-size: 16px;
+}
+
+.container-3 #kiri li {
+  font-size: 16px;
+  color: #a1a1a1;
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.container-3 #kanan {
+  width: 65%;
+  display: flex;
+  padding: 0 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container-3 #kanan .content {
+  margin-top: 50px;
+  border: solid #27272a;
+  width: 320px;
+  height: 210px;
+}
+
+.container-3 #kanan img {
+  width: 320px;
+  height: 160px;
+}
+
+.container-3 #kanan h3 {
+  margin: 10px 0 0 10px;
+}
+
+.container-3 #bawah {
+  margin: 50px;
+  width: 70%;
+}
+
+.container-3 #bawah h2 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  grid-area: 1/1;
+}
+
+.container-3 button {
+  width: 135px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 1em;
+  margin-right: 8px;
+}
+
+.container-3 #sign-up {
+  background-color: #ededed;
+  color: #000000;
+}
+
+.container-3 #contact {
+  background-color: #000000;
+  color: #ededed;
+  border: solid #27272a;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  margin: 50px;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.footer li {
+  padding: 2px 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.footer a {
+  color: #a1a1a1;
+}
+
+.footer #status {
+  color: #0090ff;
+}
+
+.footer #status i {
+  font-size: 12px;
+}
