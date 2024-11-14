@@ -241,6 +241,16 @@ button {
   list-style-position: inside;
 }
 
+.container-3 #kiri .hidden {
+  display: none;
+}
+
+.container-3 #show {
+  color: #a1a1a1;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .container-3 #kanan {
   width: 65%;
   display: flex;
