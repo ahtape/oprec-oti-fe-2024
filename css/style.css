@@ -133,7 +133,8 @@ button {
 
 .nav-kanan #sign-up:hover,
 .container-1 #get-started:hover,
-.container-3 #sign-up:hover {
+.container-3 #sign-up:hover,
+.container-3 .collapse-button:hover {
   background-color: var(--secondary-text);
   transition: 0.3s;
 }
@@ -271,10 +272,16 @@ button {
 
 .container-3 #kanan {
   width: 65%;
-  display: flex;
   padding: 0 50px;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-3 .content-wrapper {
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 50px;
 }
 
 .container-3 #kanan .content {
@@ -297,6 +304,14 @@ button {
 
 .container-3 #kanan h3 {
   margin: 10px 0 0 10px;
+}
+
+.container-3 #collapse-button {
+  align-self: center;
+}
+
+.container-3 .collapsed {
+  display: none;
 }
 
 .container-3 #bawah {
