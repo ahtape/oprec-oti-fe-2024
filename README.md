@@ -1,3 +1,5 @@
+jangan dinilai sebelum deadline pengumpulan ya mas, masih mau saya lanjutkan
+
 ## Fitur Opsional
 
 1. Animasi hover pada button, link, dan gambar.
