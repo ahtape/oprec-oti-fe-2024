@@ -288,9 +288,23 @@ button {
 
 .container-3 #bawah h2 {
   font-size: 28px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  grid-area: 1/1;
+  display: inline;
+}
+
+.container-3 #h2001 {
+  font-weight: 600;
+  color: #ededed;
+}
+
+.container-3 #h2003 {
+  font-weight: 400;
+  color: #0090ff;
+}
+
+.container-3 #h2002,
+#h2004 {
+  font-weight: 400;
+  color: #a1a1a1;
 }
 
 .container-3 button {
@@ -298,7 +312,7 @@ button {
   height: 50px;
   border-radius: 25px;
   font-size: 1em;
-  margin-right: 8px;
+  margin: 10px 0 8px 0;
 }
 
 .container-3 #sign-up {
@@ -317,7 +331,7 @@ button {
   display: flex;
   margin: 50px;
   justify-content: space-between;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .footer li {
