@@ -1,9 +1,27 @@
+:root {
+  --base-color: #000000;
+  --base-variant: #27272a;
+  --text-color: #ededed;
+  --secondary-text: #a1a1a1;
+  --primary-color: #ededed;
+  --secondary-color: #0090ff;
+}
+
+.lightmode {
+  --base-color: #ededed;
+  --base-variant: #a1a1a1;
+  --text-color: #000000;
+  --secondary-text: #27272a;
+  --primary-color: #000000;
+  --secondary-color: #0090ff;
+}
+
 /* Global */
 body {
   margin: 0;
   padding: 0;
-  background-color: #000000;
-  color: #ededed;
+  background-color: var(--base-color);
+  color: var(--text-color);
   font-family: "Inter", sans-serif;
 }
 
@@ -23,13 +41,13 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: solid #27272a;
+  border-bottom: solid var(--base-variant);
   padding: 16px 0;
   font-weight: 400;
 }
 
 .navbar a {
-  color: #a1a1a1;
+  color: var(--secondary-text);
   position: relative;
 }
 
@@ -41,7 +59,7 @@ button {
 }
 
 .logo a {
-  color: #ededed;
+  color: var(--text-color);
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -60,7 +78,7 @@ button {
 .navbar li a::after {
   content: "";
   position: absolute;
-  background-color: #ededed;
+  background-color: var(--primary-color);
   height: 2px;
   width: 0;
   left: 0;
@@ -69,7 +87,7 @@ button {
 }
 
 .navbar a:hover {
-  color: #ededed;
+  color: var(--text-color);
 }
 
 .navbar a:hover:after {
@@ -96,33 +114,33 @@ button {
 }
 
 .nav-kanan #sign-in {
-  background-color: #000000;
-  color: #ededed;
-  border: solid #27272a;
+  background-color: var(--base-color);
+  color: var(--text-color);
+  border: solid var(--base-variant);
 }
 
 .nav-kanan #sign-in:hover,
 .container-1 #more-analytics:hover,
 .container-3 #contact:hover {
-  background-color: #27272a;
+  background-color: var(--base-variant);
   transition: 0.3s;
 }
 
 .nav-kanan #sign-up {
-  background-color: #ededed;
-  color: #000000;
+  background-color: var(--primary-color);
+  color: var(--base-color);
 }
 
 .nav-kanan #sign-up:hover,
 .container-1 #get-started:hover,
 .container-3 #sign-up:hover {
-  background-color: #a1a1a1;
+  background-color: var(--secondary-text);
   transition: 0.3s;
 }
 
 /* first content */
 .container-1 {
-  color: #ededed;
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
   margin: 80px 50px;
@@ -130,7 +148,7 @@ button {
 }
 
 .container-1 a {
-  color: #ededed;
+  color: var(--primary-color);
   font-size: 1em;
   width: fit-content;
   position: relative;
@@ -139,7 +157,7 @@ button {
 .container-1 a::after {
   content: "";
   position: absolute;
-  background-color: #ededed;
+  background-color: var(--primary-color);
   height: 2px;
   width: 0;
   left: 0;
@@ -166,24 +184,24 @@ button {
 }
 
 .container-1 #get-started {
-  background-color: #ededed;
-  color: #000000;
+  background-color: var(--primary-color);
+  color: var(--base-color);
 }
 
 .container-1 #more-analytics {
-  background-color: #000000;
-  color: #ededed;
-  border: solid #27272a;
+  background-color: var(--base-color);
+  color: var(--text-color);
+  border: solid var(--base-variant);
 }
 
 /* second content */
 .container-2 {
   display: flex;
-  border: solid #27272a;
+  border: solid var(--base-variant);
 }
 
 .container-2 .content:first-child {
-  border-right: solid #27272a;
+  border-right: solid var(--base-variant);
 }
 
 .container-2 .content {
@@ -211,7 +229,7 @@ button {
   display: flex;
   flex-direction: column;
   margin: 50px 50px 100px 50px;
-  border: solid #27272a;
+  border: solid var(--base-variant);
 }
 
 .container-3 #atas {
@@ -222,7 +240,7 @@ button {
 .container-3 #kiri {
   width: 40%;
   padding: 50px 50px 50px 50px;
-  border-right: solid #27272a;
+  border-right: solid var(--base-variant);
 }
 
 .container-3 #kiri h2 {
@@ -236,7 +254,7 @@ button {
 
 .container-3 #kiri li {
   font-size: 16px;
-  color: #a1a1a1;
+  color: var(--secondary-text);
   list-style: disc;
   list-style-position: inside;
 }
@@ -246,7 +264,7 @@ button {
 }
 
 .container-3 #show {
-  color: #a1a1a1;
+  color: var(--secondary-text);
   text-decoration: underline;
   cursor: pointer;
 }
@@ -261,7 +279,7 @@ button {
 
 .container-3 #kanan .content {
   margin-top: 50px;
-  border: solid #27272a;
+  border: solid var(--base-variant);
   width: 320px;
   height: 210px;
   overflow: hidden;
@@ -287,24 +305,24 @@ button {
 }
 
 .container-3 #bawah h2 {
-  font-size: 28px;
+  font-size: 32px;
   display: inline;
 }
 
 .container-3 #h2001 {
   font-weight: 600;
-  color: #ededed;
+  color: var(--text-color);
 }
 
 .container-3 #h2003 {
   font-weight: 400;
-  color: #0090ff;
+  color: var(--secondary-color);
 }
 
 .container-3 #h2002,
 #h2004 {
   font-weight: 400;
-  color: #a1a1a1;
+  color: var(--secondary-text);
 }
 
 .container-3 button {
@@ -316,14 +334,14 @@ button {
 }
 
 .container-3 #sign-up {
-  background-color: #ededed;
-  color: #000000;
+  background-color: var(--primary-color);
+  color: var(--base-color);
 }
 
 .container-3 #contact {
-  background-color: #000000;
-  color: #ededed;
-  border: solid #27272a;
+  background-color: var(--base-color);
+  color: var(--secondary-text);
+  border: solid var(--base-variant);
 }
 
 /* footer */
@@ -341,16 +359,16 @@ button {
 }
 
 .footer a {
-  color: #a1a1a1;
+  color: var(--secondary-text);
 }
 
 .footer a:hover {
-  color: #ededed;
+  color: var(--text-color);
   transition: 0.3s;
 }
 
 .footer #status {
-  color: #0090ff;
+  color: var(--secondary-color);
 }
 
 .footer #status i {
