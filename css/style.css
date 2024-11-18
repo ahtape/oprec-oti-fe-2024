@@ -44,6 +44,11 @@ button {
   border-bottom: solid var(--base-variant);
   padding: 16px 0;
   font-weight: 400;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--base-color);
 }
 
 .navbar a {
